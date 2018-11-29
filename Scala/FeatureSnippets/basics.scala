@@ -5,6 +5,12 @@ object HelloWorld{
     // Method with parameter list
     def addThenMultiply(x:Int,y:Int)(multiplier:Int) = add(x,y) * multiplier
 
+    // Multiline method syntax 
+    def getSquareString (input:Double): String = {
+        val square = input * input
+        input.toString
+    }
+
     def main(args: Array[String]):  Unit = {
         println("Hello world from Scala.")
 

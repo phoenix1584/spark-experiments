@@ -8,7 +8,7 @@ object HelloWorld{
     // Multiline method syntax 
     def getSquareString (input:Double): String = {
         val square = input * input
-        input.toString
+        square.toString
     }
 
     def main(args: Array[String]):  Unit = {
@@ -28,6 +28,8 @@ object HelloWorld{
 
         // Calling method with param list
         println(addThenMultiply(testVal,testVar)(testVar))
+
+        println(getSquareString(14))
         
     }
 }

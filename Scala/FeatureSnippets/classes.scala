@@ -33,8 +33,33 @@ object Classes extends App{
 
     }
 
+    def ClassMembers() : Unit =  {
+      class Point {
+        private var _x = 0
+        private var _y = 0
+        private val bound = 100
+
+        def x = _x
+        def x_= (newVal: Int): Unit = {
+          if (newVal < bound) _x = newVal else printWarning
+        }
+
+        def y = _y
+        def y_= (newVal: Int): Unit = {
+          if (newVal < bound) _y = newVal else printWarning
+        }
+
+        private def printWarning = println("[WARN]: Out of bounds.")
+      }
+      val p1 = new Point
+      p1.x = 99
+      p1.y = 101
+
+    }
+
     BasicPoint()
     ClassConstructors()
+    ClassMembers()
 }
 
 Classes.main(args)

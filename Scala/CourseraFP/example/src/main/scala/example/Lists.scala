@@ -56,6 +56,7 @@ object Lists {
           maxAccum(tail, newMax)
       }
     }
-    maxAccum(xs, 0)
+    if (xs.isEmpty) throw  new java.util.NoSuchElementException
+    else maxAccum(xs, 0)
   }
 }

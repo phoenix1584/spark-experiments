@@ -1,3 +1,4 @@
+package scalabookcode
 object Traits extends App{
   def BasicTrait() : Unit = {
     trait Iterator[A] {
@@ -41,9 +42,4 @@ object Traits extends App{
 
   }
 
-  BasicTrait()
-  BasicSubTyping()
-
 }
-
-Traits.main(args)

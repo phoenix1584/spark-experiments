@@ -1,4 +1,4 @@
-
+package scalabookcode
 object UnifiedType extends App{
     println("Exploring unified types.")
 
@@ -12,5 +12,3 @@ object UnifiedType extends App{
 
     list.foreach(elem => println(elem))
 }
-
-UnifiedType.main(args)

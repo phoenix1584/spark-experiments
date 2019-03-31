@@ -1,3 +1,4 @@
+package scalabookcode
 object Classes extends App{
     println ("Exploring classes.")
     class User
@@ -56,10 +57,4 @@ object Classes extends App{
       p1.y = 101
 
     }
-
-    BasicPoint()
-    ClassConstructors()
-    ClassMembers()
 }
-
-Classes.main(args)

@@ -1,3 +1,4 @@
+package scalabookcode
 object Mixins extends App{
 
   def BasicMixins() : Unit = {
@@ -21,4 +22,3 @@ object Mixins extends App{
   }
 }
 
-Mixins.main(args)

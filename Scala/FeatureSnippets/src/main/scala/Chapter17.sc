@@ -49,7 +49,7 @@ wds ++= List("is", "a")
 wds --= List("This","is")
 
 // maps
-val map = scala.collection.mutable.Map.empty[String,Int]
+  val map = scala.collection.mutable.Map.empty[String,Int]
 map += ("string" -> 1)
 //map("hello") = 2 // Error:(150, 58) ')' expected but string literal found.
 //inst$A$A.`get$$instance_0$$map("hello")`; println("map("hello"): " + {val $$temp$$ = inst$A$A.map("hello") ; MacroPrinter.printDefInfo($$temp$$).replace("inst$A$A.", "") + " = " + ( print$$$Worksheet$$$Array$$$($$temp$$) ).stripPrefix("A$A0$A$A0$")})

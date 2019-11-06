@@ -72,3 +72,23 @@ val vv = v.view
 val vv1 = vv map (_ + 1)
 val vv2 = vv1 map (_ * 2)
 vv2.force
+
+// Iterators
+val it = Iterator("a","number","of","words")
+it.map(_.length) foreach println
+it.next
+
+// Bufferred Iterator
+val itBuff = Iterator(1,2,3,4)
+val bit = it.buffered
+bit.head
+bit.next()
+bit.next()
+
+//Scala collections to Java collections
+// FIXME : Not working with scala 2.11. Seems to be deprecated.
+/*import collection.JavaConversions
+import collection.mutable._
+val jul : java.util.List[Int] = ArrayBuffer(1,2,3)*/
+
+
